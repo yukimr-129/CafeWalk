@@ -78,11 +78,11 @@ class Main{
 
     //インスタンス生成
     scrollinit(){
-        this.setObservers = new ScrollObserver('.tween-animate-title', this.textAnimation, {rootMargin: "-400px 0px"});
+        this.setObservers = new ScrollObserver('.tween-animate-title', this.textAnimation, {rootMargin: "-300px 0px"});
         this.setObservers = new ScrollObserver('.cover-slide', this.inviewAnimation);
         this.setObservers = new ScrollObserver('.nav-trigger', this.navAnimation.bind(this), {once: false});
         this.setObservers = new ScrollObserver('.swiper-container', this.toggleSlideAnimation.bind(this), {once: false});
         this.setObservers = new ScrollObserver('.appear', this.inviewAnimation);
-        this.setObservers = new ScrollObserver('#main-content', this.sideAnimation.bind(this), {once: false, rootMargin: "-400px 0px"});
+        this.setObservers = new ScrollObserver('#main-content', this.sideAnimation.bind(this), {once: false, rootMargin: "-30px 0px"});
     }
 }
